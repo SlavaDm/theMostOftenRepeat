@@ -16,10 +16,11 @@ arr.forEach(el => {
   }
 })
 
+b.sort((a, b) => (a.repeat > b.repeat ? -1 : 1))
+
 const findTheMostOftenRepeat = (value = 1) => {
   return b.slice(0, value)
 }
 
-b.sort((a, b) => (a.repeat > b.repeat ? -1 : 1))
 
 console.log(findTheMostOftenRepeat(3))
